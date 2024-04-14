@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-dpuaG1suU0eT09tx5plTaGMLBsfDLzUCCUXOY2j/LSvXYuG6Bqs43ALlhIqAJVRb" crossorigin="anonymous">
+<link rel = "stylesheet" href='./static/css/style.css'/>
+<title>Tax Calculator</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+  <form id="taxCalculatorForm">
+    <div>
+      <label for="income">Gross Annual Income (in Lakhs):</label>
+      <img class= 'info-icon' src='./static/image/query_info.ico' alt='info' title='Gross annual income is your total salary in a year before any deduction' style='width:16px;height:16px;'><br>
+      <input type="text" id="income" name="income">
+      <span class="error-icon" id="incomeErrorIcon" title="Please enter numbers only">
+        <img src='./static/image/error.ico' alt='Error' title='Please enter numbers only' style='width:16px;height:16px;'>
+      </span>
+    </div>
+    <div>
+      <label for="extraIncome">Extra Income (in Lakhs):</label>
+      <img class= 'info-icon' src='./static/image/query_info.ico' alt='info' title='Extra income is your other source of income e.g. rental income, family pension etc.' style='width:16px;height:16px;'><br>
+      <input type="text" id="extraIncome" name="extraIncome">
+      <span class="error-icon" id="extraIncomeErrorIcon" title="Please enter numbers only">
+        <img src='./static/image/error.ico' alt='Error' title='Please enter numbers only' style='width:16px;height:16px;'>
+      </span>
+    </div>
+    <div>
+        <label for="age">Age:</label>
+        <img class= 'info-icon' src='./static/image/query_info.ico' alt='info' title='Enter your age group' style='width:16px;height:16px;'><br>
+        <select id="age" name="age">
+          <option value=""></option>
+          <option value="<40">&lt;40</option>
+          <option value="≥40 & <60">&ge;40 &lt;60</option>
+          <option value="≥60">&ge;60</option>
+        </select>
+        <span class="error-icon" id="ageErrorIcon" title="Age is mandatory">
+          <img src='./static/image/error.ico' alt='Error' title='Age is mandatory' style='width:16px;height:16px;'>
+        </span>
+      </div>
+    <div>
+      <label for="deductions">Deductions (in Lakhs):</label>
+      <img class= 'info-icon' src='./static/image/query_info.ico' alt='info' title='Deductions is your expenses for healthcare, investments, and certain education expenses. ' style='width:16px;height:16px;'><br>
+      <input type="text" id="deductions" name="deductions">
+      <span class="error-icon" id="deductionsErrorIcon" title="Please enter numbers only">
+        <img src='./static/image/error.ico' alt='Error' title='Please enter numbers only' style='width:16px;height:16px;'>
+      </span>
+    </div>
+    <div>
+      <button type="button" id="calculateButton">Calculate Tax</button>
+    </div>
+    <div id="result"></div>
+  </form>
+  <script type="text/javascript" src="./static/js/calculate.js"></script>
+</body>
+</html>

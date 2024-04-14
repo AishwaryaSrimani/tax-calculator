@@ -1,0 +1,76 @@
+h1 {
+    color: rgb(19, 19, 95);
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 30px;
+}
+
+label, option {
+    color:black;
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+    padding-left: 15%;
+    padding-top: 20px;
+}
+input {
+    color:black;
+    text-align: center;
+    font-family: courier;
+    font-size: 15px;
+    height: 25x;
+    width: 70%;
+    padding-left: 25px;
+    margin-left: 15%;
+}
+img.title{
+    width: 5px;
+}
+button {
+    color:rgb(6, 6, 28);
+    background-color: rgb(155, 155, 193);
+    text-align: center;
+    font-family: "Ariel";
+    font-size: 20px;
+    height: 30px;
+    width:70%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    line-height: initial;
+}
+
+select{
+    color:black;
+    text-align: center;
+    font-family: courier;
+    font-size: 15px;
+    height: 30px;
+    width: 70%;
+    padding-left: 25px;
+    margin-left: 15%; 
+}
+body{
+    margin: auto;
+    margin-top: 80px;
+    width: 40%;
+    border: 3px solid rgb(16, 17, 16);
+    border-radius: 15px;
+    padding: 10px;
+}
+form, img{
+    background-color: rgb(212, 208, 230);
+    border-radius: 15px;
+}
+
+.error-icon {
+    display: none;
+    cursor: pointer;
+    margin-left: 5px;
+  }
+  .error-icon.active {
+    display: inline-block;
+  }
