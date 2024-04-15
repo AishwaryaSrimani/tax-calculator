@@ -37,6 +37,14 @@ python calculator.py
 
 4. Open your web browser and go to `http://localhost:8000` to access the application.
 
+5. Hosted Web App
+
+To access the hosted version of the web app, visit:
+
+```bash
+https://calculate-your-tax.netlify.app/
+```
+
 
 
 ## Usage
