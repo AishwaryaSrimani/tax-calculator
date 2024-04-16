@@ -1,7 +1,7 @@
 
 # Tax Calculator Web Application
 
-This is a simple web application built with Flask that allows users to calculate their overall income after tax deduction based on their gross annual income, extra income, age group, and deductions.
+This is a simple web application that allows users to calculate their overall income after tax deduction based on their gross annual income, extra income, age group, and deductions.
 
 
 
@@ -15,49 +15,37 @@ This is a simple web application built with Flask that allows users to calculate
 
 
 
-## Installation
+## Usage
 
-1. To run the application locally, follow these steps:
+1. Clone this repository to your local machine.
+2. Click on `index.html` and it will access the Home page.
+3. Choose the `Calculate Your Tax` option.   
+4. A new tab will open. There will be a `calculator` that takes input from users in numbers e.g. `100000`.
+5. There is an info sign `?` within a circle, hover over the info icons to view informative tooltips.
+6. To know your overall income after tax deduction do the following:
+  - Enter your gross annual income, extra income, select your age group, and enter deductions in the respective input fields.
+  - Click the "Calculate Tax" button to calculate your overall income after tax deduction.
+6. If any input field is empty or contains invalid data, the error icon `!` within a circle will be displayed. Hover over the error icons to view informative tooltips.
+8. Once valid inputs are provided and clicked on the `Calculate Tax` button, the application will display the overall income after tax deduction in a popup window.
 
-```bash
-  git clone https://github.com/AishwaryaSrimani/tax-calculator.git
-```
 
-2. Install the required dependencies:
 
-```bash
-pip install -r requirements.txt
-```
+## Folder Structure
 
-3. Run the Flask application:
+- `index.html`: Main HTML file containing the form and interface.
+- `static/`: Folder containing static assets such as CSS and JavaScript files.
+  - `css/`: CSS files.
+  - `js/`: JavaScript files.
+ 
 
-```bash
-python calculator.py
-```
-
-4. Open your web browser and go to `http://localhost:8000` to access the application.
-
-5. Hosted Web App
+  
+## Demo
 
 To access the hosted version of the web app, visit:
 
 ```bash
 https://calculate-your-tax.netlify.app/
 ```
-
-
-
-## Usage
-
-1. Open your web browser and go to `http://localhost:8000` and it will access the Home page.
-2. Choose the `Calculate Your Tax` option.   
-3. A new tab will open. There will be a `calculator` that takes input from users in numbers e.g. `100000`.
-4. There is an info sign `?` within a circle, hover over the info icons to view informative tooltips.
-5. To know your overall income after tax deduction do the following:
-  - Enter your gross annual income, extra income, select your age group, and enter deductions in the respective input fields.
-  - Click the "Calculate Tax" button to calculate your overall income after tax deduction.
-6. If any input field is empty or contains invalid data, the error icon `!` within a circle will be displayed. Hover over the error icons to view informative tooltips.
-8. Once valid inputs are provided, the application will display the overall income after tax deduction in a popup window.
 
 
 
@@ -90,7 +78,7 @@ https://calculate-your-tax.netlify.app/
 ![alert](https://github.com/AishwaryaSrimani/PracticeGit/assets/165182404/5a302e36-ebb9-41ac-9f8a-5849b8300c4d)
 
 ## 🛠 Technologies Used
-- Flask:Python web framework
-- HTML, CSS, Javascript: Frontend development
-- Bootstrap: Frontend framework for responsive design
+- HTML
+- CSS
+- Javascript
 
